@@ -15,7 +15,7 @@ function App() {
 		<>
 			<div
 				style={{ backgroundColor: theme }}
-				className="h-[100vh] w-[100vw] flex justify-center items-center"
+				className="h-[100vh] w-[100vw] flex justify-center items-center flex-col"
 			>
 				<h1 className="text-3xl text-blue font-bold text-center">Hello world</h1>
 				<Theme theme={theme} changeTheme={handleChangeTheme} />
