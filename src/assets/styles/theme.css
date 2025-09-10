@@ -1,0 +1,35 @@
+@layer theme {
+	/* Text colors */
+	.text-blue {
+		color: #1e90ff;
+	}
+	.text-red {
+		color: #ff6347;
+	}
+	.text-green {
+		color: #28a745;
+	}
+	.text-yellow {
+		color: #ffc107;
+	}
+	.text-dark {
+		color: #343a40;
+	}
+
+	/* Background colors */
+	.bg-blue {
+		background-color: #1e90ff;
+	}
+	.bg-red {
+		background-color: #ff6347;
+	}
+	.bg-green {
+		background-color: #28a745;
+	}
+	.bg-yellow {
+		background-color: #ffc107;
+	}
+	.bg-dark {
+		background-color: #343a40;
+	}
+}
