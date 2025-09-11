@@ -13,7 +13,7 @@ const Header = () => {
 		<header>
 			<div className="text-sm">
 				<div className=" bg-black text-white text-base">
-					<div className="mx-auto flex max-w-7xl justify-between px-5 py-2">
+					<div className="mx-auto flex max-w-6xl justify-between  py-2">
 						<div className="contact space-x-4">
 							<a href="">hieut@gmail.com</a>
 							<span>/</span>
@@ -33,7 +33,7 @@ const Header = () => {
 							<img src={Logo} alt="logo" className="w-100 h-auto object-cover" />
 						</a>
 					</div>
-					<nav className="flex flex-wrap items-center space-x-2 text-base uppercase">
+					<nav className="flex flex-wrap items-center space-x-0.5 text-base uppercase">
 						{navItems.map((i, index) => (
 							<ul key={index} className="relative group">
 								<li className="p-2 flex items-center  hover:bg-red-700 hover:text-white cursor-move cursor-pointer">
@@ -43,7 +43,7 @@ const Header = () => {
 									{i.hasArrow && <IoIosArrowDown size={16} />}
 								</li>
 								{i.hasArrow && i.subMenu && (
-									<div className="absolute hidden group-hover:block z-50 left-0  bg-white w-40 shadow-md">
+									<div className="absolute hidden group-hover:block z-50 left-0  bg-white w-50 shadow-md">
 										<div className="flex flex-col gap-2 shadow-2xl">
 											{i.subMenu.map((sub, index) => (
 												<a
@@ -59,9 +59,9 @@ const Header = () => {
 							</ul>
 						))}
 					</nav>
-					<div className="flex items-center space-x-5 text-2xl">
+					<div className="flex items-center space-x-5 text-2xl gap-2">
 						<div className="relative group">
-							<IoIosSearch className="cursor-pointer m-2" />
+							<IoIosSearch className="cursor-pointer" />
 							<input
 								type="text"
 								placeholder="Search..."
