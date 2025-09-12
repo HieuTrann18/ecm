@@ -6,10 +6,10 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Header />
-			<div className="max-w-[1200px] mx-auto ">
-				<main className="px-10">{children}</main>
+			<div className="container-lg">
+				<main>{children}</main>
+				<Footer />
 			</div>
-			<Footer />
 		</>
 	);
 };
